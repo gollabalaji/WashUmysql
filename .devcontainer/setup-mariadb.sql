@@ -1,6 +1,7 @@
 -- Using the root user, grant access to the mariadb user.
 GRANT ALL PRIVILEGES ON *.* TO 'mariadb'@'%' IDENTIFIED BY 'mariadb';
 
+GRANT CREATE ON *.* TO 'mariadb'@'%';
 -- Create a table in the database
 USE mariadb;
 CREATE TABLE MyTable (
