@@ -4,7 +4,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'mariadb'@'%' IDENTIFIED BY 'mariadb';
 GRANT CREATE ON *.* TO 'mariadb'@'%';
 -- Create a table in the database
 USE mariadb;
-CREATE TABLE MyTable (
+CREATE TABLE bgolla (
   ID INTEGER NOT NULL AUTO_INCREMENT,
   Item VARCHAR(255),
   PRIMARY KEY (ID)
