@@ -4,11 +4,11 @@ GRANT ALL PRIVILEGES ON *.* TO 'mariadb'@'%' IDENTIFIED BY 'mariadb';
 GRANT CREATE ON *.* TO 'mariadb'@'%';
 -- Create a table in the database
 USE mariadb;
-CREATE TABLE bgolla (
+CREATE TABLE test_table (
   ID INTEGER NOT NULL AUTO_INCREMENT,
   Item VARCHAR(255),
   PRIMARY KEY (ID)
 );
 
 -- Populate the table
-INSERT INTO MyTable (Item) VALUES ('One'), ('Two'), ('Three');
+INSERT INTO test_table (Item) VALUES ('One'), ('Two'), ('Three');
